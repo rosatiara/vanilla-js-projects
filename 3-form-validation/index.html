@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Form Validation</title>
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <form id="form-el" action="/" method="GET">
+          <div class="child"> 
+          <!--fullname-->
+            <label for="fullname-el">Full Name</label>
+            <input id="fullname-el" type="text" required name="name" placeholder="John Doe">
+          </div> 
+          <div class="child">
+          <!--username-->
+            <label for="username-el">Username</label>
+            <input id="username-el" type="text" required name="name" placeholder="helloimjohn" >
+          </div>
+          <!--email-->
+          <div class="child">
+            <label for="email-el">Email</label>
+            <input type="email" id="email-el" placeholder="example@email.com" required name="email">
+          </div>
+          <!--phone number-->
+          <div class="child">
+            <label for="phone-el">Phone Number</label>
+            <input id="phone-el" type="tel"  placeholder="+62765987654" required pattern='^\+[0-9]*' name="phone">
+          </div> 
+          <!--password-->
+          <div class="child">
+            <label for="password-el">Password</label>
+            <input id="password-el" type="password" placeholder="Create Password"
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" title="Please include combination of characters consist of at least 1 uppercase, 1 lowercase, and 1 number." required>
+          </div> 
+          <!--password confirmation-->
+          <div class="child">
+            <label for="confirm-el">Confirm Password</label>
+            <input id="confirm-el" type="password" placeholder="Confirm Password"
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" required>
+          </div> 
+          <!--register button-->
+          <div class="child"> 
+            <button onclick="submitClicked()"id="submit-el" type="submit">REGISTER</button>
+          </div>
+      </form>
+      <!--message for user-->
+      <div class="container-message">
+      <h2 id="message-el">Hello, there!</h2>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

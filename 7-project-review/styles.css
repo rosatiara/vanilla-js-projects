@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+*, ::before, ::after {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Barlow', sans-serif;
+  background-color: #0F131A;
+  color: rgb(207, 225, 252);
+}
+.title h1 {
+  margin-bottom: 2rem;
+}
+
+.container-all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 100vh;
+  width: 100%;
+}
+.reviewerImg {
+  width: 8rem;
+  border-radius: 50%;
+  margin: 1.3rem 7.5rem;
+}
+
+.name {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.review-container {
+  box-shadow: 0 0 30px 5px #29354e;
+  background-color: #000E29;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30rem;
+  min-height: auto;
+  border-radius: 20px;
+}
+
+.divider {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  width: 4rem;
+  color:rgb(32, 64, 112);
+}
+.review {
+  margin: 0.3rem 1.4rem 1.3rem 1.3rem;
+  font-size: 1rem;
+  text-align: center;
+  font-style: italic;
+}
+.svg {
+  fill: black;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.svg.right{
+  transform: rotate(180deg)
+}
+.prev-btn {
+  margin-right: 0.5rem;
+}
+button {
+  position: sticky;
+  background-color: transparent;
+  border-style: none;
+  border-radius: 5px;
+  width: 2rem;
+  height: 2rem;
+}
+
+.button-container {
+  position: sticky;
+  margin-bottom: 2rem;
+  /* margin-top: 0.5rem; */
+  /* border: 2px solid blue; */
+}
+/* 
+.button-container {
+  border: 2px solid blue;
+}
+.review-container {
+  border: 2px solid red;
+} */

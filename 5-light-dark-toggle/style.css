@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+* {
+  font-family: 'Nanum Pen Script', cursive;
+}
+body {
+  --accent-color: #6fdcbf;
+  --bg-color: #f6f4f6;
+  --text-color: #404140;
+  --button-text-color: var(--bg-color); 
+  --transition-delay: 0.725s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  transition: var(--transition-delay);
+  background-color:var(--bg-color);
+  color: var(--text-color);
+
+} 
+
+body.dark {
+ --accent-color: #b1b1d8;
+ --bg-color: #29272a;
+ --text-color: #404140;
+ --button-text-color: var(--bg-color); 
+}
+
+.sun-moon-container {
+  justify-content: center;
+  --rotation: 0;
+  height: 200vmin;
+  top: 0;
+  display: flex;
+  pointer-events: none;
+  align-items: center;
+  position: absolute;
+  transform: rotate(calc(var(--rotation)*1deg));
+  transition: transform var(--transition-delay);
+}
+
+/* .dark .sun-moon-container {
+  --rotation: 180;
+} */
+
+.sun, .moon {
+  position: absolute;
+  transition: opacity var(--transition-delay);
+  width: 30px;
+  height: 30px;
+  fill: var(--accent-color);
+}
+.sun {
+
+  align-items: center;
+  top: 5%;
+  opacity:1;
+}
+
+.dark .sun {
+  opacity: 0;
+}
+
+.moon {
+  bottom: 5%;
+  opacity: 0;
+  transform: rotate(180deg);
+}
+.dark .moon {
+  opacity: 1;
+
+}
+
+.toggle-icon {
+  transform: rotate(180deg);
+}
+button {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 20em;
+  align-items: center;
+  padding: .5em 1em;
+  display: flex;
+  justify-content: space-around;
+  transition: var(--transition-delay);
+  transform: scale(1); 
+}
+
+button:hover, button:focus {
+  transform:scale(1.1);
+}
+
+.click-me {
+  margin-left: 0.5em;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+

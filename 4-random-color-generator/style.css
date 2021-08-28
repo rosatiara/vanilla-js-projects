@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@300&display=swap');
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.25rem;
+}
+body {
+  font-family: 'Mali', cursive;
+}
+
+
+.nav-center {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-top: 1rem;
+  /* margin-top: 1rem; */
+  height: 4rem;
+  color: rgb(238,238,238);
+  background-color: #E76F51;
+ 
+}
+.title {
+  font-weight: 700;
+}
+.pastel {
+  margin-right: 2.2rem;
+  padding-left: 1.2em;
+  width: 6rem;
+  height: 2rem;
+  background-color: #F4A261;
+  /* border: 2px solid blue; */
+  border-radius: 20px;
+}
+main {
+  margin: auto;
+  /* background-color: #f7eac9; */
+  height: 100%;
+}
+.all {
+  border-radius: 20px;
+  padding-left: 1.5em;
+  width: 5rem;
+  height: 2rem;
+  background-color: #F4A261;
+  /* border: 2px solid blue; */
+}
+a {
+  font-size: 1rem;
+  color: rgb(238,238,238);
+  /* width: 200px;
+  height: 200px; */
+  /* border: 2px solid yellow; */
+  text-decoration: none;
+}
+.ul {
+  display: flex;
+}
+.big-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  width: 100%;
+}
+.background-desc {
+  text-align: center;
+  height: 4rem;
+  width: 30rem;
+  color: #532c15;
+  border-radius: 40px;
+}
+.color {
+  font-weight: 700;
+  font-size: 1em;
+  text-shadow: tomato;
+  color: black;
+}
+button {
+  font-family: 'Mali', cursive;
+  border: none;
+  width: 8rem;
+  border-radius: 15px;
+  font-weight: 600;
+  height: 2.3em;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  color: #E76F51;
+  border: 4px solid #F4A261;
+  background-color: transparent;
+}
+.button-container{
+  text-align: center;
+  
+}
