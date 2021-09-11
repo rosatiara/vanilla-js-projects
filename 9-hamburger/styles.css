@@ -1,0 +1,49 @@
+body {
+  background-color: whitesmoke;
+}
+.hamburger {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+}
+.line {
+  border: 3px solid black;
+  margin: 5px;
+  width: 30px;
+}
+ul {
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 2rem;
+}
+li {
+  margin: 10px 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: salmon;
+}
+#overlay {
+  background-color: rgba(0,0,0, 0.8);
+  position: fixed;
+  z-index: 2;
+  height: 0%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow-y: hidden;
+  transition: 0.6s;
+}
+#overlay a {
+  display: block;
+}
